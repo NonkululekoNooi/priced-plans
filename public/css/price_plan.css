@@ -9,16 +9,43 @@ body {
     flex-direction: column; 
  justify-content: center;
  align-items: center;
+ background-color: grey;
     
 
 }
 .USER {
     display: inline;
     padding-right: 350px;
+    font-weight: bold;
     
    
+}
+.USERS{
+    margin-top:20px;
+    padding-right: 70px;
+    font-weight: bold;
+}
+.USERED{
+    margin-top:20px;
+    padding-right: 50px;
+    font-weight: bold;
+}
+.next{
+    margin-top: 20px;
 }
 .Price{
     padding-right: 480px;
     margin-top: 30px;
+    font-weight: bold;
+}
+.nav{
+   
+    margin: 50px;
+}
+.home{
+    margin-right: 50px;
+}
+
+.link{
+    margin-left:50px;
 }

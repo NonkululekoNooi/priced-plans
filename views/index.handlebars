@@ -12,39 +12,53 @@
 </head>
 
 <body>
-
-
-
     <div class="main">
+        <div class="nav">
+            <button class="home" type=""> HOME </button>
+
+
+            </a>
+
+            <a href="/price_plans">
+                <button type=""> Price Plan </button>
+            </a>
+
+            <a href="/Link user">
+                <button class="link" type=""> Link user </button>
+            </a>
+        </div>
+
+
 
 
         <h1>ALLOCATE A PRICE PLAN FOR THE USER</h1>
-                <form action="User" method="POST">
+        <form action="User" method="POST">
             <div class=" USER">
                 <label>Username</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" class="Enter" placeholder="Name" name="enterName" >
+                <input type="text" class="Enter" placeholder="Name" name="enterName">
             </div>
-<div class="Price">
-<label>Price Plan</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<select name="cost" >
-  <option value="sms">SMS</option>
-  <option value="call">CALL</option>
-</select>
-</div>
+            
+            <div class="Price">
+                <label>Price Plan</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="cost">
+                    <option value="sms">SMS</option>
+                    <option value="call">CALL</option>
+                </select>
+            </div>
 
 
 
-</form>
-<form action="/action">
-  <a class="table" href="/action" method:'actionType' name="actionType">
-          
- <button class='next' type="">ALLOCATE</button>
-    </a>
-    </form>
+        </form>
+        <form action="/calc_bill">
+            <a class="table" href="/calc_bill" method:'actionType' name="actionType">
 
-</div>
-           
+                <button class='next' type="">ALLOCATE</button>
+            </a>
+        </form>
+
+    </div>
+
 
 </body>
 
-</html> 
+</html>

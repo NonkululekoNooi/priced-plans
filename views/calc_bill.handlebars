@@ -12,9 +12,9 @@
 
  
   
-  <div class="arrows">
+  <div class="nav">
     <a href="/">
-  <button type=""> HOME </button>
+  <button class="home"type=""> HOME </button>
  
 </a>
 
@@ -22,20 +22,26 @@
   <button type=""> Price Plan </button>
 </a>
 
+  <a href="/price_plans">
+  <button class="link" type=""> Link user </button>
+</a>
+
+
 </div>
   <h1>Phone bill widget</h1>
   <h3>Calculating the total phone bill for the user</h3>
 
-   <div class=" users">
+   <div class=" USERS">
                 <label>Username</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" class="Enter" placeholder="Name" name="enterName" >
             </div>
 
-             <div class=" USER">
+             <div class=" USERED">
                 <label>Usage string</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" class="Enter" placeholder="Name" name="enterName" >
             </div>
              <button class='next' type="">Calculate total phone bill</button>
 
              <h4>Phone bill total:</h4>
- 
+ <h2><br> <a class="table" href="/price_plans/{{plan_name}}">{{plan_name}}</br></a></h2>
+ <h2><br> <a class="table" href="//price_plans/:id{{plan_name}}">{{plan_name}}</br></a></h2>

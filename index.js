@@ -23,18 +23,32 @@ app.post("/User", function(req, res){
     
 })
 
-app.get("/action", function(req, res){
-    res.render("action")
+app.get("/calc_bill", function(req, res){
+    res.render("calc_bill")
 
 })
 
-app.post("/action", function(req, res){
-  res.render("action")
+app.post("/calc_bill", function(req, res){
+  res.render("calc_bill")
 })
 
 app.get("/price_plans", function(req, res){
 
   res.render("price_plans")
+})
+app.get("/price_plans/:id", function(req, res){
+
+  res.render("price_plans/:id")
+})
+
+app.get("/link_user", function(req, res){
+
+  res.render("link_user")
+})
+
+app.post("/link_user", function(req, res){
+
+  res.render("price_plans/:id")
 })
 
 const PORT = process.env.PORT || 3002;
