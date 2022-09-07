@@ -7,6 +7,23 @@ const myPricePlan = require("./price_planff");
 const pgp = require("pg-promise")();
 const app = express();
 
+
+let useSSL = false;
+let local = process.env.LOCAL || false;
+if (process.env.DATABASE_URL && !local) {
+  useSSL = true;
+}
+
+const DATABASE_URL =process.env.DATABASE_URL || "postgresql://postgres:pg123@localhost:5432/priceplan";
+
+const config = {
+  connectionString: DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
+};
+
+
 app.engine("handlebars", exphbs.engine({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
