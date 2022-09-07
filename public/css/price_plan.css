@@ -33,6 +33,10 @@ body {
 .next{
     margin-top: 20px;
 }
+.bar{
+    display: inline-block;
+    margin-top: 50px;
+}
 .Price{
     padding-right: 480px;
     margin-top: 30px;
