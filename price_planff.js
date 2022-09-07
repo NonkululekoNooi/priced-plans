@@ -17,33 +17,33 @@ function price_plan(){
          return names
      }
 
-     function setPrice (price) {
-        smsCost = Number(price.smsCost);
-        callCost = Number(price.callCost);
+    //  function setPrice (price) {
+    //     smsCost = Number(price.smsCost);
+    //     callCost = Number(price.callCost);
        
-    }
-     function getPrice() {
-         return {
-             smsCost,
-             callCost,
+    // }
+    //  function getPrice() {
+    //      return {
+    //          smsCost,
+    //          callCost,
             
-         }
-     }
+    //      }
+    //  }
 
-     function getTotal(answer) {
-        let total = 0;
+    //  function getTotal(answer) {
+    //     let total = 0;
        
-        for (let output = 0; index < actionList.length; output++) {
-            const action = actionList[output];
-            if (action.type === type) {
+    //     for (let output = 0; index < actionList.length; output++) {
+    //         const action = actionList[output];
+    //         if (action.type === type) {
              
-                total += action.cost;
-            }
-        }
-        return total;
+    //             total += action.cost;
+    //         }
+    //     }
+    //     return total;
   
 
-    }
+    // }
 
 
 
@@ -51,9 +51,9 @@ function price_plan(){
     return{
         pushingNames,
         ourNames,
-        setPrice,
-        getPrice,
-        getTotal
+        // setPrice,
+        // getPrice,
+        // getTotal
 
     }
 }
