@@ -1,0 +1,24 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-image: url(pexels-abdullah-ghatasheh-1631677.jpg);
+    display: flex;
+    flex-direction: column; 
+ justify-content: center;
+ align-items: center;
+    
+
+}
+.USER {
+    display: inline;
+    padding-right: 350px;
+    
+   
+}
+.Price{
+    padding-right: 480px;
+    margin-top: 30px;
+}
