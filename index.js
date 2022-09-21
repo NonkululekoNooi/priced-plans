@@ -3,7 +3,7 @@ const session = require("express-session");
 const express = require("express");
 const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser");
-const myPricePlan = require("./price_planff");
+const price_plan = require("./price_planff");
 const pgp = require("pg-promise")();
 const app = express();
 
@@ -23,6 +23,8 @@ const config = {
   },
 };
 
+const db = pgp(config);
+
 
 app.engine("handlebars", exphbs.engine({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
@@ -33,6 +35,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get("/", function(req, res){
+  
     res.render("index")
 })
 

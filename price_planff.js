@@ -1,4 +1,4 @@
-function price_plan(){
+function price_plan(db){
 
     var names = [];
 
@@ -13,10 +13,10 @@ function price_plan(){
      
    
  
-     function ourNames() {
-         return names
-     }
-
+     async function ourNames() {
+        let named = await db.manyOrNone("SELECT plan_names FROM priceplan ");
+        return named;
+      }
     //  function setPrice (price) {
     //     smsCost = Number(price.smsCost);
     //     callCost = Number(price.callCost);

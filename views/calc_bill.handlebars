@@ -1,47 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/price_plan.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRICE_PLAN</title>
+
+    <link rel="stylesheet" href="css/price_plan.css">
+
 </head>
+
 <body>
+    <div class="main">
+        <div class="nav">
+
+           <a href="/">
+      <button class="home" type=""> HOME </button>
+
+    </a>
+
+            <a href="/price_plans">
+                <button type=""> Price Plan </button>
+            </a>
+
+            <a href="/Link user">
+                <button class="link" type=""> Link user </button>
+            </a>
+        </div>
 
 
- 
-  
-  <div class="nav">
-    <a href="/">
-  <button class="home"type=""> HOME </button>
- 
-</a>
-
-   <a href="/price_plans">
-  <button type=""> Price Plan </button>
-</a>
-
-  <a href="/price_plans">
-  <button class="link" type=""> Link user </button>
-</a>
 
 
-</div>
-  <h1>Phone bill widget</h1>
-  <h3>Calculating the total phone bill for the user</h3>
-
-   <div class=" USERS">
+        <h1>ALLOCATE A PRICE PLAN FOR THE USER</h1>
+        <form action="User" method="POST">
+            <div class=" USER">
                 <label>Username</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" class="Enter" placeholder="Name" name="enterName" >
+                <input type="text" class="Enter" placeholder="Name" name="enterName">
+            </div>
+            
+            <div class="Price">
+                <label>Price Plan</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="cost">
+                    <option value="sms">SMS</option>
+                    <option value="call">CALL</option>
+                </select>
             </div>
 
-             <div class=" USERED">
-                <label>Usage string</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" class="Enter" placeholder="Name" name="enterName" >
-            </div>
-             <button class='next' type="">Calculate total phone bill</button>
 
-             <h4>Phone bill total:</h4>
- <h2><br> <a class="table" href="/price_plans/{{plan_name}}">{{plan_name}}</br></a></h2>
- <h2><br> <a class="table" href="//price_plans/:id{{plan_name}}">{{plan_name}}</br></a></h2>
+
+        </form>
+        <form action="/calc_bill">
+            <a class="table" href="/calc_bill" method:'actionType' name="actionType">
+
+                <button class='next' type="">ALLOCATE</button>
+            </a>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
